@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gradient Background with Color Inputs and Random Button</title>
+	<style>
+		body {
+			background: linear-gradient(to right, #000000, #ffffff);
+		}
+		h1 {
+			color: #ffffff;
+			text-align: center;
+			margin-top: 50px;
+			letter-spacing: 0.3em;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input[type="color"] {
+			width: 100px;
+			height: 30px;
+			margin-bottom: 20px;
+		}
+		button {
+			background-color: #008CBA;
+			color: #ffffff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		p {
+			margin-top: 20px;
+			font-size: 18px;
+			color: #ffffff;
+		}
+	</style>
+</head>
+<body>
+	<h1>BACKGROUND GENERATOR</h1>
+	<div class="container">
+		<label for="color1">Select color 1:</label>
+		<input type="color" id="color1" value="#000000">
+		<label for="color2">Select color 2:</label>
+		<input type="color" id="color2" value="#ffffff">
+
+		<button onclick="randomColors()">Random</button>
+		<h1>This is background</h1>
+		<p id="cssCode">linear-gradient(to right, #000000, #ffffff);</p>
+	</div>
+</body>
+<script>
+	function randomColors() {
+		let color1 = getRandomColor();
+		let color2 = getRandomColor();
+		document.body.style.background = "linear-gradient(to right, " + color1 + ", " + color2 + ")";
+		document.getElementById("color1").value = color1;
+		document.getElementById("color2").value = color2;
+		
+		document.getElementById("cssCode").innerHTML = "linear-gradient(to right, " + color1 + ", " + color2 + ");";
+	}
+
+	function getRandomColor() {
+		let letters = "0123456789ABCDEF";
+		let color = "#";
+		for (let i = 0; i < 6; i++) {
+			color += letters[Math.floor(Math.random() * 16)];
+		}
+		return color;
+	}
+</script>
