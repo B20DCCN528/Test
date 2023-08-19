@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="d-flex justify-content-between">
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Nhiệt độ</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            
+   
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Độ ẩm</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                  
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Ánh sáng</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>        
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col">
+                <div class="card sm-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Đồ thị</h5>
+                    <!-- <div id="chart"></div> -->
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="row">            
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Đèn</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Quạt</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
